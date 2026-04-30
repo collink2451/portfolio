@@ -53,6 +53,6 @@ export class Projects {
   ];
 
   onImageError(event: any) {
-    event.target.src = 'https://placehold.co/640x360';
+    event.target.style.display = 'none';
   }
 }
