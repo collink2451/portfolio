@@ -36,6 +36,14 @@ jobs:
       - name: "Build"
         run: npm run build -- --configuration production
 
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_KEY }}
+          script: rm -rf /var/www/portfolio/*
+
       - name: "Copy Files"
         uses: appleboy/scp-action@v0.1.7
         with:
