@@ -1,0 +1,23 @@
+<section class="py-24 px-6 max-w-7xl mx-auto">
+  <h2 class="text-4xl font-bold text-center mb-4">
+    <span
+      class="bg-gradient-to-br from-base-content to-base-content/70 bg-clip-text text-transparent"
+    >
+      Skills
+    </span>
+  </h2>
+  <p class="text-base-content/60 text-center mb-16">Technologies I work with</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    @for (group of skillGroups; track group.category) {
+      <div class="card bg-base-200 shadow-xl p-6">
+        <h3 class="text-lg font-bold mb-4 text-primary">{{ group.category }}</h3>
+        <div class="flex flex-wrap gap-2">
+          @for (skill of group.skills; track skill) {
+            <span class="badge badge-outline text-sm py-3 px-4">{{ skill }}</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>
