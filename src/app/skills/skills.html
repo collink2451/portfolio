@@ -8,13 +8,19 @@
   </h2>
   <p class="text-base-content/60 text-center mb-16">Technologies I work with</p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    @for (group of skillGroups; track group.category) {
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up">
+    @for (group of skillGroups; track group.category; let i = $index) {
       <div class="card bg-base-200 shadow-xl p-6">
         <h3 class="text-lg font-bold mb-4 text-primary">{{ group.category }}</h3>
         <div class="flex flex-wrap gap-2">
-          @for (skill of group.skills; track skill) {
-            <span class="badge badge-outline text-sm py-3 px-4">{{ skill }}</span>
+          @for (skill of group.skills; track skill; let j = $index) {
+            <span
+              class="badge badge-outline text-sm py-3 px-4"
+              [attr.data-aos]="i % 2 === 1 ? 'fade-left' : 'fade-right'"
+              data-aos-duration="500"
+              [attr.data-aos-delay]="j * 100"
+              >{{ skill }}</span
+            >
           }
         </div>
       </div>
