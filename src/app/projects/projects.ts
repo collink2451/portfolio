@@ -19,6 +19,15 @@ interface Project {
 })
 export class Projects {
   projects: Project[] = [
+    /*{
+      name: 'Outflow',
+      description: 'Personal Finance Management App built with Angular, ASP.NET, and EF Core.',
+      image: '/images/outflow.png',
+      tags: ['Angular', 'C#', 'ASP.NET', 'SignalR', 'EF Core'],
+      liveUrl: 'https://outflow.collinkoldoff.dev',
+      githubUrl1: 'https://github.com/collink2451/outflow-client',
+      githubUrl2: 'https:/./github.com/collink2451/outflow-server',
+    },*/
     {
       name: 'Spyfall',
       description:
