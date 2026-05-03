@@ -26,7 +26,7 @@ export class Projects {
       tags: ['Angular', 'C#', 'ASP.NET', 'SignalR', 'EF Core'],
       liveUrl: 'https://outflow.collinkoldoff.dev',
       githubUrl1: 'https://github.com/collink2451/outflow-client',
-      githubUrl2: 'https:/./github.com/collink2451/outflow-server',
+      githubUrl2: 'https://github.com/collink2451/outflow-server',
     },*/
     {
       name: 'Spyfall',
@@ -36,7 +36,7 @@ export class Projects {
       tags: ['Angular', 'C#', 'ASP.NET', 'SignalR', 'EF Core'],
       liveUrl: 'https://spyfall.collinkoldoff.dev',
       githubUrl1: 'https://github.com/collink2451/spyfall-client',
-      githubUrl2: 'https:/./github.com/collink2451/spyfall-server',
+      githubUrl2: 'https://github.com/collink2451/spyfall-server',
     },
     {
       name: 'Game Nest',
@@ -45,7 +45,7 @@ export class Projects {
       tags: ['React', 'Express', 'WebSockets'],
       liveUrl: 'https://gamenest.collinkoldoff.dev',
       githubUrl1: 'https://github.com/collink2451/gamenest-client',
-      githubUrl2: 'https:/./github.com/collink2451/gamenest-server',
+      githubUrl2: 'https://github.com/collink2451/gamenest-server',
     },
     {
       name: 'Syllabus',
