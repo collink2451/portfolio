@@ -7,7 +7,8 @@ interface Project {
   image: string;
   tags: string[];
   liveUrl: string;
-  githubUrl: string;
+  githubUrl1: string;
+  githubUrl2: string | null;
 }
 
 @Component({
@@ -20,11 +21,13 @@ export class Projects {
   projects: Project[] = [
     {
       name: 'Spyfall',
-      description: 'Real-time multiplayer web game built with Angular, C#, SignalR, and EF Core.',
+      description:
+        'Real-time multiplayer web game built with Angular, ASP.NET, SignalR, and EF Core.',
       image: '/images/spyfall.png',
       tags: ['Angular', 'C#', 'ASP.NET', 'SignalR', 'EF Core'],
       liveUrl: 'https://spyfall.collinkoldoff.dev',
-      githubUrl: 'https://github.com/collink2451/spyfall-client',
+      githubUrl1: 'https://github.com/collink2451/spyfall-client',
+      githubUrl2: 'https:/./github.com/collink2451/spyfall-server',
     },
     {
       name: 'Game Nest',
@@ -32,7 +35,8 @@ export class Projects {
       image: '/images/gamenest.png',
       tags: ['React', 'Express', 'WebSockets'],
       liveUrl: 'https://gamenest.collinkoldoff.dev',
-      githubUrl: 'https://github.com/collink2451/gamenest-client',
+      githubUrl1: 'https://github.com/collink2451/gamenest-client',
+      githubUrl2: 'https:/./github.com/collink2451/gamenest-server',
     },
     {
       name: 'Syllabus',
@@ -40,7 +44,8 @@ export class Projects {
       image: '/images/syllabus.png',
       tags: ['React', 'Express', 'SQL'],
       liveUrl: 'https://syllabus.collinkoldoff.dev',
-      githubUrl: 'https://github.com/collink2451/syllabus',
+      githubUrl1: 'https://github.com/collink2451/syllabus',
+      githubUrl2: 'https://github.com/collink2451/syllabus-server',
     },
     {
       name: 'Tic Tac Toe',
@@ -48,7 +53,8 @@ export class Projects {
       image: '/images/tictactoe.png',
       tags: ['React', 'Express'],
       liveUrl: 'https://tictactoe.collinkoldoff.dev',
-      githubUrl: 'https://github.com/collink2451/tictactoe',
+      githubUrl1: 'https://github.com/collink2451/tictactoe',
+      githubUrl2: 'https://github.com/collink2451/tictactoe-server',
     },
   ];
 

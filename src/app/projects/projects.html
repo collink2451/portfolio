@@ -39,12 +39,21 @@
               Live
             </a>
             <a
-              [href]="project.githubUrl"
+              [href]="project.githubUrl1"
               target="_blank"
               class="btn btn-outline btn-sm rounded-full"
             >
-              GitHub
+              GitHub {{ project.githubUrl2 ? '1' : '' }}
             </a>
+            @if (project.githubUrl2) {
+              <a
+                [href]="project.githubUrl2"
+                target="_blank"
+                class="btn btn-outline btn-sm rounded-full"
+              >
+                GitHub 2
+              </a>
+            }
           </div>
         </div>
       </div>
